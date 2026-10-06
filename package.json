@@ -1,0 +1,17 @@
+{
+  "name": "repomind-ai-workspace-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RepoMind AI & ASDSE Platform - Workspace Root",
+  "scripts": {
+    "dev": "npm run dev --prefix PD-main",
+    "dev:backend": "npm run dev:backend --prefix PD-main",
+    "dev:frontend": "npm run dev:frontend --prefix PD-main",
+    "start": "npm run start --prefix PD-main",
+    "install:all": "cd PD-main && npm run install:all",
+    "kill-port": "npx --yes kill-port 5000 5173"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
