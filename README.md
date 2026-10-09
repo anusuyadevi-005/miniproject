@@ -5,11 +5,13 @@
 
 | Repository Version | Branch | Active Commit | Primary Language | Sync State |
 | :--- | :--- | :--- | :--- | :--- |
-| **V1** | `main` | [`d40cc5f`](https://github.com/anusuyadevi-005/miniproject.git/commit/d40cc5fb4bcc3511036f09fb6a56f1c76da576d1) | `JavaScript` | `✓ Grounded & Synchronized` |
+| **V2** | `main` | [`167d267`](https://github.com/anusuyadevi-005/miniproject.git/commit/167d267f63ab03972307c02192ccd66c5bc03469) | `JavaScript` | `✓ Grounded & Synchronized` |
 
-> **Commit Identity**: `d40cc5f` (d40cc5fb4bcc3511036f09fb6a56f1c76da576d1)  
-> **Author**: anusuyadevi-005 | **Date**: 6/10/2026, 11:54:39 am  
-> **Message**: *Initial commit*
+> **Commit Identity**: `167d267` (167d267f63ab03972307c02192ccd66c5bc03469)  
+> **Author**: RepoMind ASDSE Bot | **Date**: 9/10/2026, 11:14:36 am  
+> **Message**: *docs(asdse): synchronize generated documentation*
+
+> ℹ️ **Version Transition**: Synchronized from baseline **d40cc5f** → **167d267** with 1 changed files (+490 / -0 lines).
 
 ---
 
@@ -30,6 +32,7 @@
 - [Testing](#testing)
 - [Deployment & DevOps](#deployment--devops)
 - [Dependencies](#dependencies)
+- [Version Changelog](#version-changelog)
 - [License](#license)
 
 ---
@@ -246,6 +249,8 @@ Total Verified Endpoints: **119**
 | `GET` | `/ai-suggest` | `GET /ai-suggest` | `Public` |
 | `POST` | `/api/login` | `POST /api/login` | `Public` |
 | `POST` | `/api/auth/login` | `POST /api/auth/login` | `Public` |
+| `GET` | `github_success` | `GET github_success` | `Public` |
+| `GET` | `github_error` | `GET github_error` | `Public` |
 | `GET` | `/api/documentation/providers` | `GET /api/documentation/providers` | `Public` |
 | `GET` | `/api/db-status` | `GET /api/db-status` | `Public` |
 | `GET` | `/api/dashboard` | `GET /api/dashboard` | `Public` |
@@ -271,8 +276,9 @@ Total Verified Endpoints: **119**
 | `ALL` | `,,,,,,` | `ALL ,,,,,,` | `Public` |
 | `GET` | `/api/intelligent-docs/latest` | `GET /api/intelligent-docs/latest` | `Public` |
 | `GET` | `/api/intelligent-docs/:id` | `GET /api/intelligent-docs/:id` | `Public` |
-| `GET` | `github_success` | `GET github_success` | `Public` |
-| `GET` | `github_error` | `GET github_error` | `Public` |
+| `GET` | `content-type` | `GET content-type` | `Public` |
+| `POST` | `/api/github/synchronize` | `POST /api/github/synchronize` | `Public` |
+| `ALL` | `,` | `ALL ,` | `Public` |
 | `GET` | `/repository/:repositoryId/apis` | `GET /repository/:repositoryId/apis` | `Public` |
 | `GET` | `/:repositoryId/architecture` | `GET /:repositoryId/architecture` | `Public` |
 | `POST` | `/:repositoryId/ast` | `POST /:repositoryId/ast` | `Public` |
@@ -348,9 +354,6 @@ Total Verified Endpoints: **119**
 | `GET` | `/:sdid/relationships` | `GET /:sdid/relationships` | `Public` |
 | `GET` | `/:sdid/history` | `GET /:sdid/history` | `Public` |
 | `GET` | `/:repositoryId/technology` | `GET /:repositoryId/technology` | `Public` |
-| `GET` | `content-type` | `GET content-type` | `Public` |
-| `POST` | `/api/github/synchronize` | `POST /api/github/synchronize` | `Public` |
-| `ALL` | `,` | `ALL ,` | `Public` |
 | `POST` | `/api/register` | `POST /api/register` | `Public` |
 | `GET` | `/api/users/profile` | `GET /api/users/profile` | `Public` |
 | `ALL` | `,,` | `ALL ,,` | `Public` |
@@ -467,20 +470,29 @@ The system relies on **37** runtime and development dependencies defined in `pac
 | Package | Version Range | Category |
 | :--- | :--- | :--- |
 | `concurrently` | `^10.0.5` | `Runtime` |
+| `lucide-react` | `^0.380.0` | `Runtime` |
+| `mermaid` | `^12.0.0` | `Runtime` |
+| `react` | `^18.3.1` | `Runtime` |
+| `react-dom` | `^18.3.1` | `Runtime` |
+| `@types/react` | `^18.3.3` | `Runtime` |
+| `@types/react-dom` | `^18.3.0` | `Runtime` |
+| `@vitejs/plugin-react` | `^4.3.0` | `Runtime` |
+| `autoprefixer` | `^10.4.19` | `Runtime` |
+| `postcss` | `^8.4.38` | `Runtime` |
+| `tailwindcss` | `^3.4.3` | `Runtime` |
+| `vite` | `^5.2.11` | `Runtime` |
 | `@babel/parser` | `^8.0.4` | `Runtime` |
 | `adm-zip` | `^0.6.1` | `Runtime` |
 | `axios` | `^1.20.0` | `Runtime` |
-| `cors` | `^2.8.5` | `Runtime` |
-| `dotenv` | `^16.4.5` | `Runtime` |
-| `express` | `^4.19.2` | `Runtime` |
-| `fast-glob` | `^3.3.1` | `Runtime` |
-| `fs-extra` | `^11.1.1` | `Runtime` |
-| `java-parser` | `^1.0.0` | `Runtime` |
-| `js-yaml` | `^4.1.0` | `Runtime` |
-| `jsonwebtoken` | `^9.0.2` | `Runtime` |
-| `mime-types` | `^2.1.35` | `Runtime` |
-| `mongoose` | `^9.9.1` | `Runtime` |
-| `multer` | `^2.4.0` | `Runtime` |
+
+## Version Changelog
+
+### Version V2 (`167d267`)
+- **Base Version**: `d40cc5f`
+- **Files Added** (1): `[object Object]`
+- **Files Modified** (0): None
+- **Files Deleted** (0): None
+- **Diff Statistics**: +490 / -0 lines changed
 
 ## License
 
